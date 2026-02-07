@@ -179,7 +179,7 @@ ws.onmessage = (event) => {
 ```json
 {
     "type": "info",
-    "text": "Prompt aktualisiert"
+    "text": "Prompt updated"
 }
 ```
 
@@ -193,7 +193,7 @@ The server automatically selects the appropriate Whisper model based on GPU capa
 - **Other GPUs/CPU**: `medium` with `int8`
 
 ### Transcription Parameters
-Located in `med_live_server.py` (lines 68-81):
+Located in the AudioToTextRecorder initialization section of `med_live_server.py`:
 
 ```python
 recorder = AudioToTextRecorder(
@@ -262,7 +262,7 @@ Whisper-Live/
 
 ## Language Configuration
 
-By default, the server is configured for German language transcription. To change the language, modify line 70 in `med_live_server.py`:
+By default, the server is configured for German language transcription. To change the language, modify the `language` parameter in the AudioToTextRecorder initialization in `med_live_server.py`:
 
 ```python
 language="de",  # Change to "en" for English, "es" for Spanish, etc.
