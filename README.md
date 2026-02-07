@@ -277,10 +277,6 @@ Supported languages include all languages supported by OpenAI's Whisper model.
 - **Silence Detection**: Adjust `silero_sensitivity` (0.0-1.0) for your environment
 - **Post-speech Duration**: Tune `post_speech_silence_duration` based on speaking pace
 
-## License
-
-[Add your license information here]
-
 ## Contributing
 
 Contributions are welcome! Please feel free to submit issues or pull requests.
